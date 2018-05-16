@@ -1,5 +1,7 @@
 <html>
+
 <head>
+
   <title>REGISTRO UNAH</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -9,7 +11,10 @@
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">s
+
+ </head>
+
 <body>
 
 
@@ -33,7 +38,7 @@
 	    <label for="carrera">Carrera</label>
 	    <input type="text" name="carrera" class="form-control" id="carrera">
 	</div>
-    
+
     <center><input type="submit" value="Registrar" class="btn btn-success" name="btn1"></center>
 
   </form>
@@ -46,7 +51,7 @@
   		$nombre=$_POST['nombre'];
   		$cuenta=$_POST['cuenta'];
   		$carrera=$_POST['carrera'];
-  	
+
   		$conexion->query("INSERT INTO $tabla_db1 (dnombre,cuenta,carrera) values ('$nombre','$cuenta','$carrera')");
 
   		include("cerrar_bd.php");
@@ -62,7 +67,7 @@
 
 
 
-  
-  
+
+
 </body>
 </html>

@@ -1,55 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>LOGIN UNAH</title>
- 
+	<title>Login</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
- 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
 
-
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-  <br>
-  <br>
-  <br>
-  	<center><h1>LOGIN</h1></center>
-  	<form method="POST" action="matricula.php" >
-
-  	<div class="form-group">
-	   <CENTER><label for="nombre">Nombre </label></CENTER> 
-	    <input type="text" name="nombre" class="form-control" id="nombre">
+<div class="container" id='login'>
+	<div class="panel panel-success">
+		<div class="panel-heading text-center">
+			<h2>LOGIN UNAH</h2>
+      <form method="POST" action="matricula.php">
+		</div>
+		<div class="panel-body">
+			
+			<h4>Nombre: </h4>
+			<input type="text" class="form-control" name="nombre" placeholder="Nombre"><br>
+			<h4>Cuenta: </h4>
+			<input type="text" class="form-control" name="cuenta" placeholder="Cuenta">
+		</div>
+		<div class="panel-footer">
+			<button class="btn btn-primary">Ingresar</button>
+			<button class="btn btn-success">Registrar</button>
+		</div>
 	</div>
-
-   <div class="form-group">
-	   <CENTER><label for="cuenta">Cuenta </label></CENTER> 
-	    <input type="text" name="cuenta" class="form-control" id="cuenta">
-	</div>
-   
-    <center><input type="submit" value="Registrar" class="btn btn-success" name="btn1"></center>
-
-  </form>
-
-  
-
-
-
-
-  </div>
-  <div class="col-md-4"></div>
 </div>
 
-
-
-  
-  
 </body>
 </html>

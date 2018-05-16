@@ -1,30 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>ADICION UNAH</title>
- 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <title>Login</title>
 
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <meta charset="utf-8">
 
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
 </head>
 <body>
 
-
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-  	<center><h1>ADICION UNAH</h1></center>
-  	<form method="POST" action="mensage.php" >
-<div>
-  <center>
-
-       <form method="POST" action="validar.php">
-        <label type="text">ASIGNATURA</label>
-        <br>
-         <td>
+<div class="container" id='login'>
+  <div class="panel panel-success">
+    <div class="panel-heading text-center">
+      <h2>ADICION UNAH</h2>
+      <form method="POST" action="logear.php">
+    </div>
+    <div class="panel-body">
+      
+      <h4>ASIGNATURA: </h4>
+       <td>
               <select>
                                   
                  <option class="selected">---Seleccione asignatura---</option>
@@ -38,15 +44,10 @@
                  <option>redes 2</option>
                       
               </select>
-         </td>
-        <br>
-        
-        <center>
-              <form method="POST" action="validar.php">
-        <label type="text">SECCION</label>
-        <br>
-        <td>
-       
+         </td><br>
+
+      <h4>CECCION: </h4>
+      <td>
               <select>
                  <option class="selected">---Seleccione la seccion---</option>
                  <option>seccion 0700</option>
@@ -57,16 +58,17 @@
                  <option>seccion 0700</option>
                  <option>seccion 0700</option>
                  <option>seccion 0700</option>
-                      
-              </select>
-         </td>
-        
-    </form>
-  </center>
-  </center>
-   <center><input type="submit" value="ADICIONAR" class="btn btn-success" name="btn1"></center>
+    </select>
+     </td>
+    </div>
+     <div class="panel-footer">
+     
 
+      <button class="btn btn-primary">ADICIONAR</button>
+      
+    </div>
+  </div>
 </div>
-</div>
+
 </body>
 </html>
